@@ -4,42 +4,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>First Tailwind CSS Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="flex justify-between items-center">
         <div class="my-5 mx-4">
-            <a href="">
+            <a href="https://laracasts.com/series/html-and-css-workshop" target="_blank">
                 <img src="./images/Tailwind_CSS_logo.svg" alt="logo" width="200">
             </a>
         </div>
         <div class="my-5 mx-4">
-            <a href="" class="pr-4 uppercase text-sm font-bold">Home Page</a>
-            <a href="" class="uppercase text-sm font-bold bg-sky-500 rounded-full text-white py-2 px-4">Subscribe For
-                Updates</a>
+            <a href="https://laracasts.com/series/html-and-css-workshop" target="_blank"
+                class="pr-4 uppercase text-sm font-bold">Home Page</a>
+            <a href="https://laracasts.com/series/html-and-css-workshop" target="_blank"
+                class="uppercase text-sm font-bold bg-sky-500 hover:bg-sky-600 rounded-full text-white py-2 px-4">
+                Subscribe For Updates
+            </a>
         </div>
     </nav>
-    <div class="text-center m-20"><span>
-            <h1 class="text-5xl">First <span class="text-sky-500">Tailwind CSS</span> Project</h1>
-            <h2 class="text-xl">By Mohamed EL Marasy</h2>
-            <p class="text-base p-10">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and
-                any other templates
-                <br>forclass names, generating the corresponding styles and then writing them to a static CSS file.
-            </p>
-            <div class="flex-inline">
-                <select class="mx-3 px-2 py-1 bg-gray-200 rounded-full" name="" id="">
-                    <option value="" disabled selected>Getting Started</option>
-                </select>
-                <select class="mx-3 px-2 py-1 bg-gray-200 rounded-full" name="" id="">
-                    <option value="" disabled selected>Customization</option>
-                </select>
-                <input class="mx-3 px-2 py-1 bg-gray-200 rounded-full" type="text" value="Quick Search...">
-                <img src="./images/Magnifying_glass_icon.svg" alt="Magnifying Glass" width="20">
-                <p>https://laracasts.com/series/html-and-css-workshop/episodes/1</p>
+    <header class="text-center mt-16">
+        <h1 class="text-5xl">First <span class="text-sky-500">Tailwind CSS</span> Project</h1>
+        <h2 class="text-xl">By Mohamed EL Marasy</h2>
+        <p class="text-base p-10">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and
+            any other templates
+            <br>forclass names, generating the corresponding styles and then writing them to a static CSS file.
+        </p>
+        <div class="flex-inline relative">
+            <select
+                class="mx-3 px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded-full border border-black border-opacity-5"
+                name="" id="">
+                <option value="" disabled selected>Getting Started</option>
+            </select>
+            <select
+                class="mx-3 px-2 py-1 bg-gray-100 hover:bg-gray-200 rounded-full border border-black border-opacity-5"
+                name="" id="">
+                <option value="" disabled selected>Customization</option>
+            </select>
+            <input
+                class="mx-3 px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded-full border border-black border-opacity-5"
+                type="text" value="Quick Search...">
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto mt-10">
+        <div class="p-6 rounded-lg inline-flex border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+            <div><img class="rounded-lg" src="./images/illustration-1.png" alt="illustration-1" width="2500px"></div>
+            <div class="pl-6 flex flex-col justify-between">
+                <header>
+                    <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                        <p class="text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                    </button>
+                    <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                        <p class="text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                    </button>
+                    <h1 class="text-5xl mt-3 font-medium">What is Lorem Ipsum?</h1>
+                    <p class="text-gray-500 mt-1 font-medium">Published 1 day Ago</p>
+                </header>
+                <main>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <br>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.
+                    </p>
+                </main>
+                <footer class="flex justify-between items-center">
+                    <div class="flex">
+                        <img src="./images/shark-svgrepo-com.svg" alt="shark" width="50px">
+                        <p class="ml-3"><span class="font-medium">Max Bond</span><br>Lives in the Sea</p>
+                    </div>
+                    <div>
+                        <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                    </div>
+                </footer>
             </div>
-    </div>
+        </div>
+        <div class="grid grid-cols-2 mt-6">
+            <div class="mr-3 p-6 rounded-lg border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+                <div>
+                    <img class="rounded-lg" src="./images/illustration-2.png" alt="illustration-1" width="2500px">
+                    <header class="my-4">
+                        <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                            <p class="text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                        </button>
+                        <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                            <p class="text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                        </button>
+                        <h1 class="text-4xl mt-3 font-medium">Why do we use it?</h1>
+                        <p class="text-gray-500 mt-1 font-medium">Published 3 days Ago</p>
+                    </header>
+                    <main class="my-6">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                            here', making it look like readable English.
+                        </p>
+                        <br>
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                            purpose.
+                        </p>
+                    </main>
+                    <footer class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/white-rabbit-svgrepo-com.svg" alt="shark" width="50px">
+                            <p class="ml-3"><span class="font-medium">Mr. Rabbit</span><br>Lives in the Woods</p>
+                        </div>
+                        <div>
+                            <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="ml-3 p-6 rounded-lg border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+                <div>
+                    <img class="rounded-lg" src="./images/illustration-3.png" alt="illustration-1" width="2500px">
+                    <header class="my-4">
+                        <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                            <p class="text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                        </button>
+                        <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                            <p class="text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                        </button>
+                        <h1 class="text-4xl mt-3 font-medium">Where its come from?</h1>
+                        <p class="text-gray-500 mt-1 font-medium">Published 5 days Ago</p>
+                    </header>
+                    <main class="my-6">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                            Latin professor at Hampden-Sydney College in Virginia.
+                        </p>
+                        <br>
+                        <p>looked up one of the more obscure
+                            Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
+                            word in classical literature, discovered the undoubtable source.
+                            Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                            Extremes of Good and Evil) by Cicero, written in 45 BC.
+                        </p>
+                    </main>
+                    <footer class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/bat-svgrepo-com.svg" alt="shark" width="50px">
+                            <p class="ml-3"><span class="font-medium">Bat Man</span><br>Lives in the Batcave</p>
+                        </div>
+                        <div>
+                            <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-3 mt-6">
+            <div class="mr-4 p-6 rounded-lg border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+                <div>
+                    <img class="rounded-lg" src="./images/illustration-1.png" alt="illustration-1" width="2500px">
+                    <header class="my-4">
+                        <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                            <p class="text-sm text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                        </button>
+                        <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                            <p class="text-sm text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                        </button>
+                        <h1 class="text-3xl mt-3 font-medium">Why do we use it?</h1>
+                        <p class="text-gray-500 mt-1 font-medium">Published 6 days Ago</p>
+                    </header>
+                    <main class="my-6">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                        <br>
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.
+                        </p>
+                    </main>
+                    <footer class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/bat-svgrepo-com.svg" alt="shark" width="50px">
+                            <p class="ml-3"><span class="font-medium">Bat Man</span><br>Lives in the Batcave</p>
+                        </div>
+                        <div>
+                            <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="mx-2 p-6 rounded-lg border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+                <div>
+                    <img class="rounded-lg" src="./images/illustration-2.png" alt="illustration-1" width="2500px">
+                    <header class="my-4">
+                        <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                            <p class="text-sm text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                        </button>
+                        <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                            <p class="text-sm text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                        </button>
+                        <h1 class="text-3xl mt-3 font-medium">Why do we use it?</h1>
+                        <p class="text-gray-500 mt-1 font-medium">Published 6 days Ago</p>
+                    </header>
+                    <main class="my-6">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                        <br>
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.
+                        </p>
+                    </main>
+                    <footer class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/shark-svgrepo-com.svg" alt="shark" width="50px">
+                            <p class="ml-3"><span class="font-medium">Max Bond</span><br>Lives in the Sea</p>
+                        </div>
+                        <div>
+                            <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+            <div class="ml-4 p-6 rounded-lg border border-black border-opacity-5 bg-gray-100 hover:bg-gray-200">
+                <div>
+                    <img class="rounded-lg" src="./images/illustration-4.png" alt="illustration-1" width="2500px">
+                    <header class="my-4">
+                        <button class="border border-sky-500 hover:bg-sky-400 rounded-full px-3 py-1">
+                            <p class="text-sm text-sky-500 hover:text-white uppercase pt-1">Techniques</p>
+                        </button>
+                        <button class="border border-red-500 hover:bg-red-400 rounded-full px-3 py-1 ml-3">
+                            <p class="text-sm text-red-500 hover:text-white uppercase pt-1">Updates</p>
+                        </button>
+                        <h1 class="text-3xl mt-3 font-medium">Why do we use it?</h1>
+                        <p class="text-gray-500 mt-1 font-medium">Published 6 days Ago</p>
+                    </header>
+                    <main class="my-6">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.
+                        </p>
+                        <br>
+                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+                            model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                            infancy.
+                        </p>
+                    </main>
+                    <footer class="flex justify-between items-center">
+                        <div class="flex">
+                            <img src="./images/white-rabbit-svgrepo-com.svg" alt="shark" width="50px">
+                            <p class="ml-3"><span class="font-medium">Mr. Rabbit</span><br>Lives in the Woods</p>
+                        </div>
+                        <div>
+                            <button class="px-3 py-1 bg-gray-300 hover:bg-gray-400 rounded-full">Read More</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center mt-10 pt-10 pb-6 bg-gray-200 border-t border-black border-opacity-5">
+        <h3 class="mt-10 text-3xl">Stay in touch with the latest post</h3>
+        <h5 class="text-xl">Promis to keep your inbox clean.</h5>
+        <div class="inline-flex my-10 bg-gray-300 rounded-full">
+            <img class="mx-2 pl-2 pr-1" src="./images/mailbox-icon.svg" alt="mailbox">
+            <input class="p-1 bg-transparent text-lg focus-within:outline-none" type="text" placeholder="Enter Your Email Address">
+            <button class="p-1 uppercase text-lg bg-sky-500 hover:bg-sky-600 rounded-full text-white py-2 px-4">Subscribe</button>
+        </div>
+    </footer>
 </body>
 
 </html>
